@@ -1,0 +1,13 @@
+{{#if loggedIn}}
+    <div class="chat-window width-100">
+        <div class="chat-messages scroller fill-parent" id="chat-messages">
+            <p><span>Willruss:</span> Hello, World!</p>
+        </div>
+        <input class="chat-bar" id="chat-bar" placeholder="Click here or press Enter to chat" type="text">
+        <script type="module" src="./js/chatroom.js"></script>
+    </div>
+{{else}}
+    <div>
+        <p>Please login first.</p>
+    </div>
+{{/if}}
